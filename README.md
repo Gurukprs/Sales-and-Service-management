@@ -1,10 +1,16 @@
 This repository contains 2 applications and their source code.
+
 Once made necessary changes (host,user,database,password) in the code u can run the programme.
+
 For the user to access the database remotely, you will have to replace the host of user file with the target system's ip address, and also make sure both the systems are in the same network. 
+
 Then make sure to create a new inbound rule in firewall allowing access to the port '3306' (or any other in which you host the databaes, 3306 is set default)
+
 **Before Running:**
 
-prerequsite: 
+make sure to create the db using _Database build.sql_
+
+Prerequsite: 
             -> MySQL
             -> Python
             
