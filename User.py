@@ -3,10 +3,10 @@ from tkinter import ttk, messagebox
 import mysql.connector
 
 # MySQL connection details
-HOST = "192.168.126.204"
-USER = "user"
-PASSWORD = "Guru@5104"
-DATABASE = "dbms"
+HOST = "xxx.xxx.xxx.xxx" # to run in remote repalce with the target system's ipv4 address
+USER = "user" # give the user name throug which you are going to give access
+PASSWORD = "Guru@5104" # repalce with the password for your user
+DATABASE = "dbms" # repalce with the database name
 
 def connect_db():
     return mysql.connector.connect(
