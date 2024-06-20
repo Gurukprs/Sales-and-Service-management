@@ -204,7 +204,7 @@ def open_send_email_window():
         body = "Please find the attached report."
 
         msg = MIMEMultipart()
-        msg['From'] = 'guruprasaaths.22cse@kongu.edu'
+        msg['From'] = 'your_email_id' #repalce with your mail Id
         msg['To'] = recipient_email
         msg['Subject'] = subject
         msg.attach(MIMEText(body, 'plain'))
@@ -219,7 +219,7 @@ def open_send_email_window():
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
         try:
-            server.login('guruprasaaths.22cse@kongu.edu', 'Rathy@2005')  # Replace with your email and app-specific password
+            server.login('your_email_Id', 'mail_password')  # Replace with your email and app-specific password
             text = msg.as_string()
             server.sendmail('guruprasaaths.22cse@kongu.edu', recipient_email, text)
             messagebox.showinfo("Success", "Email sent successfully")
